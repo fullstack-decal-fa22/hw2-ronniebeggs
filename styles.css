@@ -15,6 +15,16 @@ h2 {
   font-size: medium;
   font-weight: 200;
 }
+
+.label {
+  color: #002c84;
+  transition: transform 0.5s 0.25s ease;
+}
+
+.label:hover {
+  transform: scale(1.5);
+}
+
 /* END SETUP */
 
 /* Classes that you might find useful */
@@ -25,17 +35,23 @@ h2 {
   width: 500px;
   border-style: solid;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .twovert {
   height: 50%;
+  width: 100%;
 }
 
 .threevert {
+  height: 33.3%;
+  width: 100%;
 }
 
 .threehoriz {
   width: 33.3%;
+  height: 100%;
 }
 
 .narrow {
@@ -59,6 +75,15 @@ h2 {
 
 /* QUESTION 1 */
 
+.red {
+  background-color: red;
+  position: top;
+}
+
+#white {
+  background-color: #fff;
+}
+
 .orange {
   background-color: orange;
 }
@@ -75,16 +100,12 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
+.light-blue {
   background-color: lightblue;
 }
 
 .purple {
   background-color: purple;
-}
-
-.white {
-  background-color: #fff;
 }
 
 .black {
@@ -94,15 +115,21 @@ h2 {
 /* BEGIN QUESTION 2 */
 
 .thailand-red {
-  /* TODO */
+  background-color: #B5002D;
+  height: 16.66%;
+  width: 100%;
 }
 
 .thailand-white {
-  /* TODO */
+  background-color: white;
+  height: 16.66%;
+  width: 100%;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color: #2E2A4C;
+  height: 33.33%;
+  width: 100%;
 }
 
 /* END QUESTION 2 */
@@ -129,11 +156,19 @@ h2 {
 }
 
 .mexico-img {
-  /* TODO */
+  max-height: 50%;
+  max-width: 33.3%;
+  align-self: center;
 }
 
 .mexico-red {
   background-color: #ce1126;
+}
+
+/* GREEK FLAG */
+.ninevert {
+  width: 100%;
+  height: 11.11%;
 }
 
 /* QUESTION 6 */
@@ -149,17 +184,17 @@ h2 {
 /* For margin practice */
 .flag1 {
   background-color: red;
-  /* TODO */
+  margin-right: 10px;
 }
 
 .flag2 {
   background-color: blue;
-  /* TODO */
+  margin-left: 10px;
 }
 /* For padding practice */
 .padding-container {
   box-sizing: border-box;
   background-color: lightblue;
   background-clip: content-box, padding-box;
-  /* TODO */
+  padding: 60px 60px 0;
 }
